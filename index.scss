@@ -11,6 +11,8 @@ img {
   color: inherit;
   letter-spacing: inherit;
   list-style: none;
+//  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
 body {
@@ -19,10 +21,6 @@ body {
   letter-spacing: 0.05em;
   font-family: 'Happy Monkey', cursive;
   height: 100vh;
-}
-
-#section0 {
-  
 }
 
 .selector-div {
@@ -59,7 +57,7 @@ body {
 
 .site-title {
   text-transform: uppercase;
-  font-size: 4em;
+  font-size: 4.5em;
   line-height: 1em;
   cursor: default;
   padding-left: 200px;
@@ -68,6 +66,7 @@ body {
 }
 
 .contact-home {
+  padding-top: 10px;
   a {
     text-decoration: none;
     text-decoration: none;
@@ -81,20 +80,19 @@ body {
   text-transform: none;
   text-shadow: none;
   font-weight: normal;
-  font-size: 0.2em;
+  font-size: 0.3em;
   line-height: 1.5em;
-  color: #fff;
+  color: black;
 
   button {
     background-color: black;
-
     i {
       padding-right: 10px;
       padding-left: 7px;
     }
 
     &:hover {
-      background-color: white;
+      background-color: red;
       color: black;
       border-radius: 2px;
       cursor: pointer;
@@ -127,8 +125,10 @@ body {
   display: inline-block;
   width: 8px;
   height: 8px;
-  border-left: 2px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  //border-left: 2px solid rgba(255, 255, 255, 0.5);
+  //border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgb(51, 51, 51);;
+  border-bottom: 2px solid rgb(51, 51, 51);;
   -webkit-transform: rotateZ(-45deg);
   transform: rotateZ(-45deg);
   animation: moveButton 3.0s infinite;
@@ -149,7 +149,7 @@ body {
   bottom: 65px;
   width: 100%;
   text-align: center;
-  color: rgba(255, 255, 255, 0.5);
+  color: black;
   font-size: 1em;
   cursor: pointer;
 }
@@ -328,10 +328,10 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 1500px;
-  height: 1500px;
-  margin-left: -1000px;
-  margin-top: -700px;
-  background-image: url("/images/top-image.png");
+  width: 700px;
+  height: 750px;
+  margin-left: -170px;
+  margin-top: -170px;
+  background-image: url("images/top-image.png");
   background-repeat: no-repeat;
 }
