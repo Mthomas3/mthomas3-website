@@ -4,6 +4,12 @@ img {
 
 $grayColor: #585858;
 
+$blackColor: #282828;
+$firstPurple: #3500D3;
+$secondPurple: #240090;
+$thirdPurple: #190061;
+$fourthPurple: #0C0032;
+
 * {
   margin: 0;
   padding: 0;
@@ -13,8 +19,8 @@ $grayColor: #585858;
   color: inherit;
   letter-spacing: inherit;
   list-style: none;
-//  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  color: $blackColor;
 }
 
 body {
@@ -64,7 +70,7 @@ body {
   cursor: default;
   padding-left: 200px;
   padding-right: 200px;
-  color: black;
+  color: $blackColor;
 }
 
 .contact-home {
@@ -72,10 +78,12 @@ body {
   a {
     text-decoration: none;
     text-decoration: none;
+    color: $firstPurple;
 
     i {
       padding-right: 12px;
       padding-left: 9px;
+      color: $firstPurple
     }
   }
 
@@ -84,7 +92,7 @@ body {
   font-weight: normal;
   font-size: 0.3em;
   line-height: 1.5em;
-  color: black;
+  color: $secondPurple;
 
   button {
     background-color: black;
@@ -116,8 +124,9 @@ body {
   bottom: 5.3%;
   width: 24px;
   height: 24px;
-  border-left: 4px solid #585858;
-  border-bottom: 4px solid #585858;
+  border-left: 4px solid $firstPurple;
+  border-bottom: 4px solid $firstPurple;
+
   -webkit-transform: rotateZ(-45deg);
   transform: rotateZ(-45deg);
   animation: moveButton 3.0s infinite;
@@ -129,8 +138,9 @@ body {
   height: 8px;
   //border-left: 2px solid rgba(255, 255, 255, 0.5);
   //border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-  border-left: 2px solid rgb(51, 51, 51);;
-  border-bottom: 2px solid rgb(51, 51, 51);;
+  border-left: 2px solid $firstPurple;
+  border-bottom: 2px solid $firstPurple;
+  
   -webkit-transform: rotateZ(-45deg);
   transform: rotateZ(-45deg);
   animation: moveButton 3.0s infinite;
@@ -151,37 +161,15 @@ body {
   bottom: 65px;
   width: 100%;
   text-align: center;
-  color: black;
+  color: $firstPurple;
   font-size: 1em;
   cursor: pointer;
 }
 
 #section1 {
-  width: 90%;
+  width: 100%;
   height: 100%;
-  background: radial-gradient(#0f3150 0, #000 90%);
-
-  .flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .flex-item {
-    padding: 15px;
-    width: 100px;
-    height: 100px;
-    margin-top: 35px;
-    color: white;
-    font-weight: bold;
-    font-size: 5em;
-    text-align: center;
-    align-items: center;
-
-    p {
-      font-size: .3em;
-    }
-  }
+  
 }
 
 #section2 {
@@ -251,10 +239,6 @@ body {
       }
     }
   }
-}
-
-.entry img-entry {
-  
 }
 
 @media (max-width: 992px) {
@@ -328,10 +312,6 @@ body {
   width: 100%;
 }
 
-#section1 {
-  background-color: red;
-}
-
 .display_image_bottom_corner {
   position: absolute;
   bottom: 0;
@@ -351,4 +331,98 @@ body {
   margin-top: -170px;
   background-image: url("images/top-image.png");
   background-repeat: no-repeat;
+}
+
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  
+  list-style: none;
+  margin: 0; 
+  //background: $secondPurple;
+  background: white;
+  padding-right: 50px;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  //color: white;
+  color: $firstPurple;
+}
+
+.navigation a:hover {
+  //background: #1565C0;
+  color: $blackColor;
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  }
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+.navigation.scrolled {
+  background-color: $firstPurple !important;
+  transition: background-color 200ms linear;
+  z-index: 1;
+  a {
+    color: white;
+  }
+  opacity: 90%;
+}
+
+.navigation {
+  background-color: white;
+  transition: background-color 200ms linear;
+  z-index: initial;
+  padding-right: 50px;
+}
+
+.navigation a:before, .navigation a:after
+{
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.navigation a:before
+{
+    content: '(';
+    left: 0px;
+    transform: translateX(10px);
+}
+
+.navigation a:after
+{
+    content: ')';
+    right: 0px;
+    transform: translateX(-10px);
+}
+
+.navigation a:hover:before, .navigation a:hover:after
+{
+    opacity: 1;
+    transform: translateX(0px);
 }

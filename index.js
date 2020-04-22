@@ -6,9 +6,15 @@ var typewriter = new Typewriter(app, {
 
 typewriter.typeString('Thomas Martins')
     .pauseFor(2000)
-    .deleteAll()
-    .typeString('Tech lead iOS ')
+    .typeString('<br/> Tech lead iOS ')
     .pauseFor(2000)
-    .deleteAll()
-    .typeString('(Swift) -> lover, <br/> developer and supporter.')
+    .typeString('<br/> (Swift) -> lover, <br/> developer and supporter.')
     .start();
+
+
+$(function () {
+    $(document).scroll(function () {
+        var $nav = $(".navigation");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+});
