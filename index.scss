@@ -34,7 +34,7 @@ body {
 .selector-div {
   position: relative;
   position: absolute;
-  top: 65%;
+  //top: 65%;
   left: 0;
   display: block;
   width: 100%;
@@ -164,12 +164,6 @@ body {
   color: $firstPurple;
   font-size: 1em;
   cursor: pointer;
-}
-
-#section1 {
-  width: 100%;
-  height: 100%;
-  
 }
 
 #section2 {
@@ -425,4 +419,86 @@ body {
 {
     opacity: 1;
     transform: translateX(0px);
+}
+
+#section1 {
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  min-height: 300px;
+}
+
+.img {
+  border-radius: 50%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 5%;
+  padding: 2%;
+
+  box-sizing: border-box;
+  border-radius: 50%;
+  
+
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  border:1px solid $firstPurple;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.column {
+  flex: 1;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.details-container {
+  flex: 2;
+}
+
+.avatar-container {
+  flex-basis: 250px;
+}
+
+h2 {
+  font-weight: bolder;
+  font-size: 2em;
+  color: #484848;
+  text-align: left;
+  color: black;
+  letter-spacing: .006em;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  //padding-right: 200px;
+}
+
+p {
+  //padding-right: 200px;
+  font-weight: lighter;
+  font-size: 1em;
+  color: #484848;
+  margin-top: 15px;
+  color: $grayColor;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.45455;
+  font-weight: 300;
+  letter-spacing: .016em;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  text-align: justify;
 }
