@@ -202,14 +202,15 @@ body {
     min-height: 300px;
     padding: 50px;
     margin-bottom: 0px;
+    
     > {
       h2 {
         font-weight: bolder;
-        font-size: 3em;
+        font-size: 2em;
         color: #484848;
         text-align: center;
         color: black;
-        letter-spacing: .006em;
+        //letter-spacing: .006em;
         font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
         //padding-right: 200px;
       }
@@ -217,16 +218,15 @@ body {
       p {
         //padding-right: 200px;
         font-weight: lighter;
-        font-size: 1em;
+        font-size: 1.5em;
         color: #484848;
         margin-top: 15px;
         color: $grayColor;
         padding-top: 10px;
         text-align: center;
-        font-size: 22px;
-        line-height: 1.45455;
-        font-weight: 300;
-        letter-spacing: .016em;
+        //line-height: 1.45455;
+        //font-weight: 300;
+        letter-spacing: 0em;
         font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
         text-align: justify;
       }
@@ -592,7 +592,7 @@ p {
   box-shadow:  0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
   border-radius: 10px;
   flex-direction: column;
-  
+  height: 7em;  
 }
 
 .flex-item p {
@@ -625,5 +625,5 @@ p {
 }
 
 .text-title {
-  height: 10rem;
+  height: 11rem;
 }
