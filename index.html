@@ -12,7 +12,6 @@
       <link rel="stylesheet" href="./index.scss">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
       <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
       <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js"></script>
@@ -21,7 +20,7 @@
   <body>
     <ul class="navigation">
         <li><a href="#">Home</a></li>
-        <li><a href="#section1">About</a></li>
+        <li><a href="index.html#section1">About</a></li>
         <li><a href="#section2">Projects</a></li>
         <li><a href="#">Contact</a></li>
     </ul>
@@ -43,7 +42,7 @@
           <div class="button discover-button"></div>
         </div>
       </div>
-      <div class="section" id="section1">
+      <div class="section" id="section1" name="section1">
 
         <div class="row">
           <div class="avatar-container">
@@ -62,7 +61,47 @@
           </div>
         </div>
       </div>
-      <div class="section" id="section2">
+      <div class="section" id="section4" name="section4">
+        <ul class="flex-container">
+          <li class="flex-item">
+            <img src="images/iphone.svg" style="width:45px;height:45px;">
+            <div class="text-title">
+              <h2> Mobile Developer </h2>
+              <p>  I have been developing for iOS since 2016. I decided to go with swift to build beautiful and well-written applications. 
+                I recently started to learn Android development with kotlin, but I still stand as an Apple evangelist. </p>
+            </div>
+              <div class="text-languages">
+                <h2> Languages I know: </h2>
+                <p> Swift, Kotlin, Kotlin Mutliplatform </p>  
+              </div>
+          </li>
+          <li class="flex-item">
+            <img src="images/laptop.svg" style="width:45px;height:45px;">
+            <div class="text-title">
+              <h2> Front-end Developer </h2>
+              <p> I started my journey as a web developer in 2014. Since then, I like to keep in touch with web developement, and 
+                do freelancing from time to time, even though I prioritize my career on iOS development. </p>
+            </div>
+              <div class="text-languages">
+                <h2> Languages I know: </h2>
+                <p> HTLM, Sass, Pug, CSS</p>
+              </div>
+          </li>
+          <li class="flex-item">
+            <img src="images/home.svg" style="width:45px;height:45px;">
+            <div class="text-title">
+              <h2> Mobile App Architecture </h2>
+              <p> Years of building different iOS applications helped me to develop strong skills in app architecture.
+                  </p>
+            </div>
+            <div class="text-languages">
+              <h2> Architectures I know: </h2>
+              <p> MVVM, MVC, MVP, Clean Architecture</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="section" id="section2" name="section2">
         <section id="entries">
           <div class="entry-row">
             <div class="entry img-entry">
@@ -94,9 +133,26 @@
             </div>
           </div>
       </div>
+      <div id="section3" name="section3">
+        <div class="row">
+          <div class="details-container">
+            <div class="entry">
+              <h2>🎉 Let's be internet BFFs 🎉</h1>
+                <h1 class="site-title">
+                <div class="contact-home">
+                  <a href="https://github.com/Mthomas3/NEO-iOS" target="_blank">
+                  <i class="fab fa-github"></i></a><a href="https://twitter.com/_thomasMartins_" target="_blank">
+                    <i class="fab fa-twitter"></i></a><a href="mailto:thomas.martins@epitech.eu">
+                      <i class="fas fa-envelope"></i></a>
+                      <a href="https://www.linkedin.com/in/mthomas3iosdev" target="_blank">
+                        <i class="fab fa-linkedin-in"></i></a><a href="https://twitter.com/_thomasMartins_" target="_blank">
+                    </div>
+                </h1>
+            </div>
+          </div>
+        </div>      
+      </div>
     </div>
   </body>
 </html>
 <script type="text/javascript" src="./index.js"></script>
-
-

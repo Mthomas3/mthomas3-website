@@ -8,7 +8,6 @@ typewriter.typeString('Thomas Martins')
     .pauseFor(2000)
     .typeString('<br/> Tech lead iOS ')
     .pauseFor(2000)
-    .typeString('<br/> (Swift) -> lover, <br/> developer and supporter.')
     .start();
 
 
