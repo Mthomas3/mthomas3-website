@@ -82,7 +82,7 @@ body {
     i {
       padding-right: 12px;
       padding-left: 9px;
-      color: $firstPurple
+      color: $firstPurple; 
     }
   }
 
@@ -487,6 +487,18 @@ p {
   text-align: justify;
 }
 
+@media all and (max-width: 1400px) {
+  #section2 .entry {
+    padding: 20px;
+  }
+}
+
+@media all and (max-width: 1300px) {
+  #section2 .entry {
+    padding: 10px;
+  }
+}
+
 @media all and (max-width: 1200px) {
   .navigation {
     //justify-content: space-around;
@@ -524,20 +536,103 @@ p {
   
 }
 
+
+@media all and (max-width: 800px) {
+  .display_image_top_corner {
+    width: 700px;
+    height: 750px;
+    margin-left: -350px;
+    margin-top: -170px;
+  }
+
+  .contact-home {
+    font-size: 0.5em;
+  }
+
+  .display_image_bottom_corner { 
+    width: 600px;
+    height: 600px;
+  }
+
+  .site-title {
+    font-size: 2em;
+  }
+
+  #section3 h2 {
+    font-size: 1.2em;
+  }
+
+  #section2 .entry > p, h2 {
+    padding-top: 0;
+    padding-bottom: 5%;
+  }
+
+  #section2 .entry {
+    min-height: 250px;
+  }
+}
+
 @media all and (max-width: 600px) {
-  /*.navigation {
-    flex-flow: column wrap;
+  .display_image_bottom_corner {
+      width: 500px;
+      height: 600px;
+    }
+
+  .display_image_top_corner { 
+    margin-left: -450px;
+  }
+
+  .site-title {
+    font-size: 1.1em;
+  }
+
+  .contact-home {
+    font-size: 0.6em;
+  }
+
+}
+
+@media all and (max-width: 400px) {
+  #section1 .entry p {
+    font-size: 1em;
+    
+  }
+
+  .flex-item h2 {
+    line-height: 0 !important;
+    margin-top: 5%;
+  }
+
+  #section2 .entry > h2 {
     padding: 0;
   }
-  .navigation a { 
-    text-align: center; 
-    padding: 10px;
-    border-top: 1px solid rgba(255, 255, 255,0.3); 
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+
+  #section2 .entry > p, h2 {
+    padding-top: 5%;
   }
-  .navigation li:last-of-type a {
-    border-bottom: none;
-  }*/
+
+  .site-title {
+    font-size: 0.8em;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .contact-home {
+    font-size: 0.9em;
+  }
+
+  .img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .display_image_top_corner {
+    
+  }
+
+  #section2 .entry > p, h2 {
+    font-size: 1em;
+  }
 }
 
 #section3 {
@@ -579,6 +674,8 @@ p {
   margin: 0;
   padding: 0;
   list-style: none;
+  flex-flow: row wrap;
+
 }
 
 .flex-item {
