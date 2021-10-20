@@ -373,11 +373,11 @@ body {
 .navigation.scrolled {
   background-color: $firstPurple !important;
   transition: background-color 200ms linear;
+  opacity: 90%;
   z-index: 1;
   a {
     color: white;
   }
-  opacity: 90%;
 }
 
 .navigation {
